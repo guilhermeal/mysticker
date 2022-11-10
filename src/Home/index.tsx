@@ -74,7 +74,7 @@ export function Home() {
         />
 
         <View style={{display: 'flex', flexDirection: 'row' }}>
-          <Button title="Compartilhar" onPress={handleTakePicture} />
+          <Button title={photo ? `Compartilhar` : `Tirar foto`} onPress={photo ? handleShareScreenShot : handleTakePicture} />
           {photo && <Button title="Tirar outra" onPress={() => setPhotoURI(null)} />}
         </View>
         
