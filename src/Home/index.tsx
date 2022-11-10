@@ -74,10 +74,8 @@ export function Home() {
         />
 
         <View style={{display: 'flex', flexDirection: 'row' }}>
-          
           <Button title="Compartilhar" onPress={handleTakePicture} />
-          {photo && <Button title="Tirar outra" typeButton="retry" onPress={() => setPhotoURI(null)} />}
-
+          {photo && <Button title="Tirar outra" onPress={() => setPhotoURI(null)} />}
         </View>
         
       </ScrollView>
