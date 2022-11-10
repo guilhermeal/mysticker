@@ -27,9 +27,18 @@ export const styles = StyleSheet.create({
     alignItems: 'center'
   },
   name: {
-    fontSize: 22,
+    fontSize: 20,
     fontWeight: '900',
     color: '#000',
-    textTransform: 'uppercase'
+    textTransform: 'uppercase',
+    textAlign: 'center',
+    width: 'auto'
+  },
+  sticker: {
+    backgroundColor: '#373D98'
+  },
+  retry: {
+    color: '#FFF',
+    fontWeight: 'bold',
   }
 });
